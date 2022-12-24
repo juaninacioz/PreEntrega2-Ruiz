@@ -21,14 +21,41 @@
   grid-row-gap: 10px;
 }
 
+
+/*MENU*/
+.nav{
+  grid-area: nav; 
+}
+
+.nav-item a{
+  padding:2px;
+  font-size: 30px;
+  
+ }
+.nav-item a:hover{
+ border-bottom: 1px solid rgb(235, 219, 219);
+}
+
+.navbar ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.isjonnylogo {
+  height: 200px;
+  width: 150px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-items: left;
+}
+
+/*header*/
+
 header {
-  grid-area: header;
-  /*background-image: url("../assets/imagenes/logobanda.png");*/
-    /*background-size: cover;
-  background-color: red;
-  background-position: bottom bottom;
-  align-items: column;*/
- overflow: hidden;
+   grid-area: header;
+   overflow: hidden;
 }
 
 header figure{
@@ -44,20 +71,7 @@ header figure{
 
 }
 
-.isjonnylogo {
-  height: 200px;
-  width: 150px;
-  padding-bottom: 30px;
-  display: flex;
-  justify-items: left;
-}
-
-.navbar ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
+/*main*/
 
 main {
   background-color: gray;
@@ -104,22 +118,7 @@ main {
 }
 
 
-/*carousel productos*/
-.carousel-item {
-
-background-color: black;
-
-}
-.carousel-item h1 {
-
-
-  font-size: 20PX;
-  color: black;
-
-}
-
-
-
+/*footer*/
 
 footer {
   background-color: rgb(38, 41, 41);
@@ -130,21 +129,6 @@ footer {
 
   gap: 3rem;
 
-}
-
-
-.logoRed {
-  
-  width: 50px;
-  height: 50px;
- 
-}
-
-footer ul {
-  display: flex;
-  gap: 3rem;
-  flex-direction:row;
-  
 }
 
 footer .botonizquierdo {
@@ -168,6 +152,21 @@ footer .botonizquierdo a {
   
 }
 
+footer ul {
+  display: flex;
+  gap: 3rem;
+  flex-direction:row;
+  
+}
+
+.logoRed {
+  
+  width: 50px;
+  height: 50px;
+ 
+}
+
+
 footer .botonderecho {
 
   background-color: white;
@@ -175,7 +174,6 @@ footer .botonderecho {
   border-radius: 30%;
   
   
- 
 }
 
  footer .botonderecho a {
@@ -192,20 +190,20 @@ footer .botonderecho {
 
 
 
+/*carousel productos*/
+.carousel-item {
 
-/*MENU*/
-.nav{
-  grid-area: nav; 
-}
-
-.nav-item a{
-  padding:2px;
-  font-size: 30px;
+  background-color: black;
   
- }
-.nav-item a:hover{
- border-bottom: 1px solid rgb(235, 219, 219);
-}
+  }
+  .carousel-item h1 {
+  
+  
+    font-size: 20PX;
+    color: rgb(243, 235, 235);
+   
+  
+  }
 
 /* formulario perteneciente a la pagina de contactos*/
 form {
